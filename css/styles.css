@@ -1,0 +1,425 @@
+/* geral */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+body{
+	font-family: "Cabin", sans-serif;
+	color: #FFF;
+	background-color: #00132B;
+}
+
+a {
+	transition: .5s;
+}
+
+/* sidebar */
+
+#sidebar {
+	position: fixed;
+	height: 100%;
+	width: 300px;
+	background-color: #FA5252;
+	padding-top: 40px;
+}
+
+#sidebar h1 {
+	color: #00132B;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#sidebar a {
+	color: #00132B;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+#sidebar a:hover {
+	color: #00327C;
+}
+
+#sidebar li {
+	padding: 20px;
+}
+
+.sidebar-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+.logo-temakeria {
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* conteudo */
+
+.content {
+	position: absolute;
+	left: 300px;
+	width: calc(100% - 300px);
+}
+
+.content h1, .content h2 {
+	color: #FA5252;
+	margin-bottom: 30px;
+}
+
+.content h1 {
+	font-size: 48px;
+}
+
+.content h2 {
+	font-size: 35px;
+}
+
+section {
+	padding-left: 50px;
+}
+
+/* bem vindo */
+
+#sessao-bemvindo {
+	padding-left: 0;
+}
+
+.sessao-bemvindo-content {
+	padding-left: 50px;
+}
+
+#sessao-bemvindo .banner {
+	height: 500px;
+	background-image: url('../img/banner2.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+#sessao-bemvindo h1 {
+	margin-top: 70px;
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after {
+	content: "";
+	display: block;
+	clear: both;
+	margin-bottom: 100px;
+}
+
+.sessao-minibanner {
+	width: 300px;
+	height: 400px;
+	background-image: url('../img/banner3.jpg');
+	background-position: center;
+	background-size: cover;
+	float: left;
+}
+
+.sessao-descricao {
+	position: absolute;
+	left: 370px;
+	padding-right: 30px;
+}
+
+.sessao-descricao p {
+	line-height: 2;
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-left: 25px;
+}
+
+.sessao-bemvindo-btn, form input[type=submit] {
+	background-color: #FA5252;
+	color: #FFF;
+	text-decoration: none;
+	padding: 10px;
+	transition: .5s;
+	/* display: block; */
+	width: 100px;
+	text-align: center;
+	font-size: 100%;
+	font-weight: bold;
+	border: none;
+	border-radius: 5%;
+	cursor: pointer;
+	margin-left: 25px;	
+}
+
+.sessao-bemvindo-btn:hover, form input[type=submit]:hover {
+	background-color: #ff8080;
+}
+
+/* sessao sobre */
+
+#sessao-sobre .sessao-minibanner {
+	float: right;
+	margin-right: 50px;
+	background-image: url('../img/banner4.jpg');
+}
+
+#sessao-sobre .sessao-descricao {
+	position: absolute;
+	left: 25px;
+	width: calc(100% - 400px);
+}
+
+/* galerias */
+
+.banner-galeria {
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	height: 200px;
+}
+
+#sessao-1, #sessao-2, #sessao-3 {
+	padding-right: 50px;
+	margin-bottom: 50px;
+}
+
+.fotos1-imgs {
+	width: 18.8%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img1 {
+	background-image: url('../img/galeria1.jpg');
+	margin-left: 0;
+}
+
+#img2 {
+	background-image: url('../img/galeria2.jpg');
+}
+
+#img3 {
+	background-image: url('../img/galeria3.jpg');
+}
+
+#img4 {
+	background-image: url('../img/galeria4.jpg');
+}
+
+#img5 {
+	background-image: url('../img/galeria5.jpg');
+	margin-right: 0;
+}
+
+.fotos2-imgs {
+	width: 32.3%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img6 {
+	background-image: url('../img/galeria6.jpg');
+	margin-left: 0;
+}
+
+#img7 {
+	background-image: url('../img/galeria7.jpg');
+}
+
+#img8 {
+	background-image: url('../img/galeria8.jpg');
+	margin-right: 0;
+}
+
+.fotos3-imgs {
+	width: 23.9%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img9 {
+	background-image: url('../img/galeria9.jpg');
+	margin-left: 0;
+}
+
+#img10 {
+	background-image: url('../img/galeria10.jpg');
+}
+
+#img11 {
+	background-image: url('../img/galeria11.jpg');
+}
+
+#img12 {
+	background-image: url('../img/galeria12.jpg');
+	margin-right: 0;
+}
+
+/* contato */
+
+#form-contato {
+	width: 500px;
+}
+
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea {
+	display: block;
+	border-bottom: 3px solid #FA5252;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Open sans', sans-serif;
+}
+
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus {
+	border-color: #FA5252;
+}
+
+#form-contato textarea {
+	height: 150px;
+}
+
+#form-contato ::placeholder {
+	color: #FA5252;
+}
+
+#form-contato input[type=submit] {
+	margin-left: 0;
+	font-size: 16px;
+	width: 180px;
+}
+
+/* footer */
+
+footer {
+	height: 100px;
+	padding-top: 150px;
+	color: #FA5252;
+	
+}
+
+footer p {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajustando o sidebar */
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    /* Centralizando e ajustando logo e navegação */
+    .sidebar-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo-temakeria {
+        margin-bottom: 20px;
+    }
+	#sidebar h1{
+		margin-bottom: 0;
+	}
+
+    #sidebar ul {
+        padding: 0;
+    }
+
+    #sidebar li {
+        display: inline-block;
+        padding: 10px 20px;
+    }
+	
+	#sidebar a {
+		font-size: 14px;
+	}
+
+	#sessao-bemvindo .banner {
+		height: 500px;
+		background-image: url('../img/banner2.jpg');
+		background-position: 10%;
+		background-size: cover;
+	}
+
+    /* Ajustando o conteúdo */
+    .content {
+        position: relative;
+        left: 0;
+		padding: 0;	
+        width: 100%;
+    }
+	.sessao-bemvindo-content{
+		padding-left: 20px;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.content h1{
+		font-size: 34px;
+	}
+	.sessao-descricao p{
+		font-size: 14px;
+		margin-top: 30px;
+		text-align: justify;
+	}
+	.sessao-minibanner{
+		width: 230px;
+		height: 100px;
+		background-position: 50% 65%;
+	}
+	.sessao-descricao {
+		position: relative;
+		left: 0px;
+		padding-right: 30px;
+	}
+	#sessao-sobre .sessao-minibanner {
+		float: none;
+		margin-right: 0px;		
+	}
+	#sessao-sobre .sessao-descricao {
+		width: 80%;
+		height: auto;
+		margin-right: 50px;
+	}	
+	.content h2 {
+		font-size: 30px;
+	}
+
+	#sessao-1, #sessao-2, #sessao-3, #sessao-contato, footer{
+		position: relative;
+		top: 400px;
+	}	
+	.fotos1-imgs{
+		width: 31%;
+	}
+	#img4, #img5 {
+		width: 47%;
+	}  
+	.fotos2-imgs{
+		width: 30%;
+	}
+	.fotos3-imgs{
+		width: 22%;
+	}
+
+    /* Ajustando formulário de contato */
+    #form-contato {
+        width: 200px;
+        height: auto;
+    }
+
+    /* Ajustando rodapé */
+    footer {
+        padding-top: 50px;
+    }
+
+}
